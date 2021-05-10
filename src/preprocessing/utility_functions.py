@@ -25,9 +25,7 @@ def load_dataset(*, path_to_dataset: str) -> List[np.array]:
 
 
 def getListOfFiles(*, dirName: str):
-    """
-    For the given path, get the List of all files in the directory tree
-    """
+    """ For the given path, get the List of all files in the directory tree """
 
     listOfFile = os.listdir(dirName)
     allFiles = list()
@@ -41,21 +39,25 @@ def getListOfFiles(*, dirName: str):
 
 
 def load_image(*, path_to_image: str) -> np.array:
-    """
-    From the path, load the image as an array in memory
-    """
+    """ From the path, load the image as an array in memory """
 
     return imageio.imread(path_to_image)
 
 
-def print_image(*, path_to_image: str):
-    """
-    Function to print an image given the path
-    """
+def print_image_from_path(*, path_to_image: str):
+    """ Function to print an image given the path """
 
     img = mpimg.imread(path_to_image)
     imgplot = plt.imshow(img)
     plt.show()
+
+
+def print_image_from_array(*, image_array: np.array):
+    """ Function to print an image given the path """
+
+    img = Image.fromarray(image_array, mode="1")
+    img.save("../results/my2.png")
+    img.show()
 
 
 def compute_NDVI(*, pix: List) -> float:
