@@ -1,1 +1,15 @@
 ### README FILE
+
+B01 - Aerosols 60 443
+B02 - Blue 10 490
+B03 - Green 10 560
+B04 - Red 10 665
+B05 - Red edge 120 705
+B06 - Red edge 220 740
+B07 - Red edge 320 783
+B08 - NIR 10 842
+B08A - Red edge 420 865
+B09 - Water vapor 60 945
+B10 - Cirrus 60 1375
+B11 - SWIR 120 1610
+B12 - SWIR 220 2190
